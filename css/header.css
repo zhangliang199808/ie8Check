@@ -16,18 +16,18 @@
 }
 .header_mark {
 	position: relative;
-	left: 16%;
+	left: 10%;
 	/* right: 71px; */
 	width: 143px;
 	height: 143px;
 }
 .header_text {
 	position: relative;
-	left: 16%;
+	left: 10%;
 }
 .header_chinese {
 	font-weight: 600;
-	font-size: 80px;
+	font-size: 70px;
 	color: #0054c8;
 	margin-top: 20px;
 	text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
