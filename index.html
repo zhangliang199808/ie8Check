@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./css/base.css">
 	<link rel="stylesheet" href="./css/header.css">
 	<link rel="stylesheet" href="./css/footer.css">
+	<link href="./css/jquery.slideBox.css" rel="stylesheet" type="text/css" />
+
     <title>边检</title>
 </head>
 <body>
@@ -56,6 +58,21 @@
 				</a>
 			</div>
 		</div>
+		<div class="content w">
+			<div class="banner">
+				<img class="img-size" src="./static/img/banner.png">
+			</div>
+			<!-- 轮播图部分 -->
+			<div id="demo1" class="slideBox">
+				<ul class="items">
+				  <li><a href="" title="这里是测试标题一"><img class="img-size" src="./static/img/backgroundLogin.png"></a></li>
+				  <li><a href="" title="这里是测试标题二"><img class="img-size" src="./static/img/backgroundLogin.png"></a></li>
+				  <li><a href="" title="这里是测试标题三"><img class="img-size" src="./static/img/backgroundLogin.png"></a></li>
+				  <li><a href="" title="这里是测试标题四"><img class="img-size" src="./static/img/backgroundLogin.png"></a></li>
+				  <li><a href="" title="这里是测试标题五"><img class="img-size" src="./static/img/backgroundLogin.png"></a></li>
+				</ul>
+			</div>
+		</div>
 		<div class="footer">
 			<div class="footer_first text_center w">
 				<span>访问量统计：信息总数</span>
@@ -70,5 +87,12 @@
 			</div>
 		</div>
 	</div>
+	<script src="./js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script src="./js/jquery.slideBox.js" type="text/javascript"></script>
+	<script>
+		jQuery(function($){
+			$('#demo1').slideBox();
+		});
+	</script>
 </body>
 </html>
