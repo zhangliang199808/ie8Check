@@ -1,98 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/base.css">
-	<link rel="stylesheet" href="./css/header.css">
-	<link rel="stylesheet" href="./css/footer.css">
-	<link href="./css/jquery.slideBox.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="./css/jquery.slideBox.css" rel="stylesheet" type="text/css" />
 
     <title>边检</title>
 </head>
+
 <body>
     <!-- 头部 -->
-	<div id="app" class="base_box">
-		<div class="header_box w">
-			<div class="header">
+    <div id="app" class="base_box">
+        <div class="header_box w">
+            <div class="header">
                 <div class="header_img">
                     <img class="img-size" src="./static/img/changcheng.jpg">
-				</div>
-				<div class="header_title clearfix">
-					<div class="header_mark fl">
-						<img class="img-size" src="./static/img/guohui.png">
-					</div>
-					<div class="header_text fl">
-						<div class="header_chinese">北京出入境边防检查总站</div>
-						<div class="header_english">Beijing General Station of Exit And Entry Frontier Inspection of The P.R.C</div>
-					</div>
-				</div>
-			</div>
-			<div class="header_tab">
-				<a href="#" class="header_li header_li_background">
+                </div>
+                <div class="header_title clearfix">
+                    <div class="header_mark fl">
+                        <img class="img-size" src="./static/img/guohui.png">
+                    </div>
+                    <div class="header_text fl">
+                        <div class="header_chinese">北京出入境边防检查总站</div>
+                        <div class="header_english">Beijing General Station of Exit And Entry Frontier Inspection of The P.R.C</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_tab">
+                <a href="#" class="header_li header_li_background">
 					网站首页
 				</a>
-				<a href="#" class="header_li">
+                <a href="#" class="header_li">
 					总站概况
 				</a>
-				<a href="#" class="header_li">
+                <a href="#" class="header_li">
 					领导讲话
 				</a>
-				<a href="#" class="header_li">
+                <a href="#" class="header_li">
 					领导批示
 				</a>
-				<a href="#" class="header_li">
+                <a href="#" class="header_li">
 					政策法规
 				</a>
-				<a href="#" class="header_li">
+                <a href="#" class="header_li">
 					大记事
 				</a>
-				<a href="#" class="header_li">
+                <a href="#" class="header_li">
 					业务资料
 				</a>
-				<a href="#" class="header_li">
+                <a href="#" class="header_li">
 					下载中心
 				</a>
-				<a href="#" class="header_li">
+                <a href="#" class="header_li">
 					历史网站
 				</a>
-			</div>
-		</div>
-		<div class="content w">
-			<div class="banner">
-				<img class="img-size" src="./static/img/banner.png">
-			</div>
-			<!-- 轮播图部分 -->
-			<div id="demo1" class="slideBox">
-				<ul class="items">
-				  <li><a href="" title="这里是测试标题一"><img class="img-size" src="./static/img/backgroundLogin.png"></a></li>
-				  <li><a href="" title="这里是测试标题二"><img class="img-size" src="./static/img/backgroundLogin.png"></a></li>
-				  <li><a href="" title="这里是测试标题三"><img class="img-size" src="./static/img/backgroundLogin.png"></a></li>
-				  <li><a href="" title="这里是测试标题四"><img class="img-size" src="./static/img/backgroundLogin.png"></a></li>
-				  <li><a href="" title="这里是测试标题五"><img class="img-size" src="./static/img/backgroundLogin.png"></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer">
-			<div class="footer_first text_center w">
-				<span>访问量统计：信息总数</span>
-				<span style="color: #358BF1;">12345</span>
-				<span style="margin-left: 1.25rem;">设为首页</span>
-				<span style="margin-left: 1.125rem;">|</span>
-				<span style="margin-left: 1.75rem;">联系我们</span>
-			</div>
-			<div class="footer_second text_center w">
-				<img class="footer_img" src="./static/img/biao.png">
-				<span style="margin-left: 0.625rem;">版权所有：北京出入边境检查总站</span>
-			</div>
-		</div>
-	</div>
-	<script src="./js/jquery-1.7.1.min.js" type="text/javascript"></script>
-	<script src="./js/jquery.slideBox.js" type="text/javascript"></script>
-	<script>
-		jQuery(function($){
-			$('#demo1').slideBox();
-		});
-	</script>
+            </div>
+        </div>
+        <div class="content w">
+            <div class="banner">
+                <img class="img-size" src="./static/img/banner.png">
+            </div>
+            <!-- 轮播图和头条新闻部分 -->
+            <div class="clearfix" style="margin-top: 30px;">
+                <!-- 轮播图部分 -->
+                <div id="demo1" class="slideBox fl">
+                    <ul class="items">
+                        <li>
+                            <a href="" title="这里是测试标题一"><img class="img-size" src="./static/img/backgroundLogin.png"></a>
+                        </li>
+                        <li>
+                            <a href="" title="这里是测试标题二"><img class="img-size" src="./static/img/backgroundLogin.png"></a>
+                        </li>
+                        <li>
+                            <a href="" title="这里是测试标题三"><img class="img-size" src="./static/img/backgroundLogin.png"></a>
+                        </li>
+                        <li>
+                            <a href="" title="这里是测试标题四"><img class="img-size" src="./static/img/backgroundLogin.png"></a>
+                        </li>
+                        <li>
+                            <a href="" title="这里是测试标题五"><img class="img-size" src="./static/img/backgroundLogin.png"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 头条新闻部分 -->
+                <div class="news clearfix">
+                    <div class="news_title clearfix">
+                        <div class="first_news fl">
+                            <img class="img-size" src="./static/img/firstNews.png">
+                        </div>
+                        <div class="news_a">
+                            <a href="#">以习近平新时代中国特色社会主义思想为指导</a>
+                            <a href="#">在新起点上奋力谱写移民管理事业新篇章</a>
+                        </div>
+                    </div>
+                    <div class="news_content">
+                        <div class="news_content_tb clearfix">
+                            <div class="news_content_tb1 fl news_content_tb1_style">
+                                <span style="font-size: 22px;">公安</span>
+                                <span>要闻</span>
+                            </div>
+                            <div class="news_content_tb1 fl">
+                                <span style="font-size: 22px;">总站</span>
+                                <span>要闻</span>
+                            </div>
+                            <a>
+								更多>>
+							</a>
+                        </div>
+                        <div class="news_content_ul display_block">
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                        </div>
+                        <div class="news_content_ul display_block">
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况2</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+
+                            <li class="news_content_li">
+                                <a class="news_content_li_title fl"><span style="margin: 0 0.625rem; color: #358BF1;">•</span>
+									2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="news_content_li_time fr">2020-07-29</span>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 通知栏部分 -->
+            <div class="notice_box">
+                <div class="notice_left fl">
+                    <div class="notice_tab fl">
+                        <div class="notice_th clearfix">
+                            <div class="notice_title fl">
+                                <div class="notice_title1 fl notice_title1_border">
+                                    <span class="iconfont icon-zhengfu notice_title1_icon notice_title1_color"></span>
+                                    <span class="notice_title1_span notice_title1_color">机关动态</span>
+                                </div>
+                                <div class="notice_title1 fl">
+                                    <span class="iconfont icon-jicenggongzuo notice_title1_icon"></span>
+                                    <span class="notice_title1_span">基层动态</span>
+                                </div>
+                            </div>
+                            <div class="notice_more">
+                                <a href="javascript:;" class="more">更多>></a>
+                            </div>
+                        </div>
+                        <div class="notice_ul display_block">
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                        </div>
+                        <div class="notice_ul">
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (2)2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice_tab fr">
+                        <div class="notice_th clearfix">
+                            <div class="notice_title fl">
+                                <div class="notice_title1 fl notice_title1_border">
+                                    <span class="iconfont icon-zhengfu notice_title1_icon notice_title1_color"></span>
+                                    <span class="notice_title1_span notice_title1_color">机关动态</span>
+                                </div>
+                                <div class="notice_title1 fl">
+                                    <span class="iconfont icon-jicenggongzuo notice_title1_icon"></span>
+                                    <span class="notice_title1_span">基层动态</span>
+                                </div>
+                            </div>
+                            <div class="notice_more">
+                                <a href="javascript:;" class="more">更多>></a>
+                            </div>
+                        </div>
+                        <div class="notice_ul display_block">
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                        </div>
+                        <div class="notice_ul">
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (2)2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice_tab fl">
+                        <div class="notice_th clearfix">
+                            <div class="notice_title fl">
+                                <div class="notice_title1 fl notice_title1_border">
+                                    <span class="iconfont icon-zhengfu notice_title1_icon notice_title1_color"></span>
+                                    <span class="notice_title1_span notice_title1_color">机关动态</span>
+                                </div>
+                                <div class="notice_title1 fl">
+                                    <span class="iconfont icon-jicenggongzuo notice_title1_icon"></span>
+                                    <span class="notice_title1_span">基层动态</span>
+                                </div>
+                            </div>
+                            <div class="notice_more">
+                                <a href="javascript:;" class="more">更多>></a>
+                            </div>
+                        </div>
+                        <div class="notice_ul display_block">
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                        </div>
+                        <div class="notice_ul">
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (2)2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice_tab fr">
+                        <div class="notice_th clearfix">
+                            <div class="notice_title fl">
+                                <div class="notice_title1 fl notice_title1_border">
+                                    <span class="iconfont icon-zhengfu notice_title1_icon notice_title1_color"></span>
+                                    <span class="notice_title1_span notice_title1_color">机关动态</span>
+                                </div>
+                                <div class="notice_title1 fl">
+                                    <span class="iconfont icon-jicenggongzuo notice_title1_icon"></span>
+                                    <span class="notice_title1_span">基层动态</span>
+                                </div>
+                            </div>
+                            <div class="notice_more">
+                                <a href="javascript:;" class="more">更多>></a>
+                            </div>
+                        </div>
+                        <div class="notice_ul display_block">
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                        </div>
+                        <div class="notice_ul">
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (2)2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                            <div class="notice_li">
+                                <a class="notice_li_a fl"><span style="color: #358BF1;">•</span> (1)2019年6月份全国铁路主要指标完成情况</a>
+                                <span class="notice_li_time fr">2020-07-29</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="notice_right fr">
+                    <div class="today_tab">
+                        <div class="today_title">
+                            今日值班
+                        </div>
+                        <div class="today_content_box">
+                            <div class="today_tab_title">
+                                <span class="today_tab_title_total today_tab_title_color">总站/站</span>
+                                <span>|</span>
+                                <span class="today_tab_title_total">执勤现场</span>
+                            </div>
+                            <div class="today_contents display_block">
+                                <div class="today_content_title">
+                                    T3执行现场
+                                </div>
+                                <div class="today_content">
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                </div>
+                                <div class="today_content_title">
+                                    T2执行现场
+                                </div>
+                                <div class="today_content">
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                </div>
+                            </div>
+                            <div class="today_contents">
+                                <div class="today_content_title">
+                                    T3执行现场2
+                                </div>
+                                <div class="today_content">
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                </div>
+                                <div class="today_content_title">
+                                    T2执行现场
+                                </div>
+                                <div class="today_content">
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                    <p>执行单位：执勤二大队</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="special_box">
+                        <div class="special_title">
+                            专题专栏
+                        </div>
+                        <div class="special_content">
+                            <div class="special_content_ul">
+                                <div class="special_content_li">
+                                    <img class="img-size" src="./static/img/backgroundLogin.png">
+                                </div>
+                                <div class="special_content_li">
+                                    <img class="img-size" src="./static/img/backgroundLogin.png">
+                                </div>
+                                <div class="special_content_li">
+                                    <img class="img-size" src="./static/img/backgroundLogin.png">
+                                </div>
+                            </div>
+                            <div class="special_next">
+                                <div class="special_icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer">
+        <div class="footer_first text_center w">
+            <span>访问量统计：信息总数</span>
+            <span style="color: #358BF1;">12345</span>
+            <span style="margin-left: 1.25rem;">设为首页</span>
+            <span style="margin-left: 1.125rem;">|</span>
+            <span style="margin-left: 1.75rem;">联系我们</span>
+        </div>
+        <div class="footer_second text_center w">
+            <img class="footer_img" src="./static/img/biao.png">
+            <span style="margin-left: 0.625rem;">版权所有：北京出入边境检查总站</span>
+        </div>
+    </div>
+    </div>
+    <script src="./js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.slideBox.js" type="text/javascript"></script>
+    <script>
+        jQuery(function($) {
+            $('#demo1').slideBox({
+                direction: 'left', //left,top
+                duration: 0.6, //unit:seconds
+                easing: 'swing', //swing,linear
+                delay: 3, //unit:seconds
+                startIndex: 0,
+                hideClickBar: false,
+                clickBarRadius: 5, //unit:px
+                hideBottomBar: false,
+                width: 800,
+                height: 480
+            });
+            // 公安要闻js
+            $('.news_content_tb1').click(function(e) {
+                    $('.news_content_tb1').removeClass('news_content_tb1_style')
+                    $('.news_content_ul').removeClass('display_block')
+                    $(this).addClass('news_content_tb1_style')
+                    $('.news_content_ul').eq($(this).index()).addClass('display_block')
+                })
+                // 工作督办js 
+            var noticeArr = document.getElementsByClassName('notice_tab');
+            for (var i = 0; i < noticeArr.length; i++) {
+                var notice = noticeArr[i];
+                var noticeTitleArr = notice.getElementsByClassName('notice_title1');
+                var noticeListArr = notice.getElementsByClassName('notice_ul');
+                var noticeSpanArr = notice.getElementsByClassName('notice_title1_span');
+                var noticeIconArr = notice.getElementsByClassName('notice_title1_icon');
+                for (var j = 0; j < noticeTitleArr.length; j++) {
+                    var noticeTitle = noticeTitleArr[j];
+                    var noticeList = noticeListArr[j];
+                    var noticeSpan = noticeSpanArr[j];
+                    var noticeIcon = noticeIconArr[j];
+                    noticeTitle.onmousemove = function() {
+                        console.log(noticeTitleArr[0])
+                        for (var k = 0; k < noticeTitleArr.length; k++) {
+                            noticeTitleArr[k].classList.remove('notice_title1_border');
+                            noticeListArr[k].classList.remove('display_block');
+                            noticeSpanArr[k].classList.remove('notice_title1_color');
+                            noticeIconArr[k].classList.remove('notice_title1_color')
+                        }
+                        noticeTitle.classList.add('notice_title1_border');
+                        noticeSpan.classList.add('notice_title1_color');
+                        noticeList.classList.add('display_block');
+                        noticeIcon.classList.add('notice_title1_color')
+                    }
+                }
+            }
+            var noticeTabBoxArr = document.getElementsByClassName('notice_tab');
+            for (var y = 0; y < noticeTabBoxArr.length; y++) {
+                var moreA = noticeTabBoxArr[y].getElementsByClassName('more')[0]
+                var titleBoxArr = noticeTabBoxArr[y].getElementsByClassName('notice_title1')
+                moreA.onclick = function() {
+                    // console.log(moreA)
+                    var textClass = titleBoxArr[0].className.split(" ")
+                    console.log(textClass)
+                    if (textClass[1] == 'notice_title1_border') {
+                        textDom = titleBoxArr[0].getElementsByClassName('notice_title1_span')[0]
+                    } else {
+                        textDom = titleBoxArr[1].getElementsByClassName('notice_title1_span')[0]
+                    }
+                    var t = textDom.innerText
+                    console.log(t)
+
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>
