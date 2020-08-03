@@ -1,16 +1,4 @@
 // 轮播图
-$('#demo1').slideBox({
-    direction: 'left', //left,top
-    duration: 0.6, //unit:seconds
-    easing: 'swing', //swing,linear
-    delay: 3, //unit:seconds
-    startIndex: 0,
-    hideClickBar: false,
-    clickBarRadius: 5, //unit:px
-    hideBottomBar: false,
-    width: 800,
-    height: 480
-});
 
  // 公安要闻js
  $('.news_content_tb1').click(function(e) {
@@ -53,3 +41,21 @@ for (var a = 0; a < noticeTab.length; a++) {
         }
     })();
 }
+
+
+function getElementsByClassName(className, tagName ){
+    if(document.getElementsByClassName){
+        return document.getElementsByClassName(className);
+    }else{
+        var tagArr = document.getElementsByTagName(tagName);
+        var tagClassName = new RegExp(className);
+        var outPutArr = [];
+        
+        for (var i = 0; i < tagArr.length; i++) {
+            if(tagClassName.test(tagArr[i].className)){
+                outPutArr.push(tagArr[i]);
+            }
+        }
+        return outPutArr;
+    }
+};
