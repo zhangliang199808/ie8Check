@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/idangerous.swiper.css">
+    <style>
+        .swiper-container {
+            position: relative;
+            width: 80%;
+            height: 230px;
+        }
+        .arrow-left {
+            position: absolute;
+            top: 30%;
+            left: 0;
+        }
+        .arrow-right {
+            position: absolute;
+            top: 30%;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-color: pink;">
+                <div class="swiper-item">
+                    <div>
+                        <img src="./static/img/backgroundLogin.png">
+                    </div>
+                    <div>我是标题</div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-color: blue;"></div>
+            <div class="swiper-slide" style="background-color: blueviolet;"></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要导航按钮 -->
+        <div class="arrow-left" style="background-color: red;">
+            <img src="./static/img/left.png" alt="">
+        </div>
+        <div class="arrow-right" style="background-color: red;">
+            <img src="./static/img/right.png" alt="">
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/idangerous.swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+                loop: true, //设置为true，则开启loop（环路）模式，默认为false
+                speed: 300,//滑动速度
+                autoplay: 2000,//自动切换的时间间隔（单位ms），不设定该参数slide不会自动切换。
+                autoplayDisableOnInteraction : false, //用户操作swiper之后，是否禁止autoplay，默认为true：停止。
+                //--  如果需要分页器 --
+                pagination: '.swiper-pagination'
+            })
+        //--  如果需要前进后退按钮 --
+        $('.arrow-left').click(function(){
+                mySwiper.swipePrev();
+        });
+        $('.arrow-right').click(function(){
+                mySwiper.swipeNext();
+        });
+    </script>
+</body>
+</html>
