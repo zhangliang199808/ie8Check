@@ -312,6 +312,7 @@
     color: #FFFFFF;
     line-height: 46px;
     font-size: 20px;
+    background-size: 100%;
 }
 
 .special_content {
@@ -335,6 +336,7 @@
 	position: relative;
 }
 .drop_box {
+    margin-top: 20px;
 	/* display: flex;
 	justify-content: space-between; */
 }
@@ -348,7 +350,6 @@
 	padding: 0 20px;
     box-sizing: border-box;
     padding-top: 10px;
-	margin-top: 20px;
 }
 .drop_li span {
 	color: #000000;
@@ -362,7 +363,7 @@
 	position: absolute;
 	top: 60px;
 	left: 0;
-	width: 1216px;
+	width: 100%;
 	z-index: 10;
 	background-color: #FFFFFF;
 	padding: 20px 30px;
@@ -433,8 +434,9 @@
 	overflow: hidden;
 }
 .syetem_icon_li {
+    position: relative;
 	display: inline-block;
-	width: 100px;
+	width: 113px;
 	height: 140px;
 	padding-top: 24px;
 	margin: 0 32px;

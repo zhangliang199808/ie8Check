@@ -1,5 +1,3 @@
-// 轮播图
-
  // 公安要闻js
  $('.news_content_tb1').click(function(e) {
     $('.news_content_tb1').removeClass('news_content_tb1_style')
@@ -22,8 +20,6 @@ for (var a = 0; a < noticeTab.length; a++) {
                 var noticeTitleItem = noticeTitle[b];
                 var noticeUlItem = noticeUl[b]
                 noticeTitleItem.onclick = function() {
-                    eval(console.log(1111))
-                    console.log(222)
                     // 删除点击这个部分的所有class
                     for (let c = 0; c < noticeTitle.length; c++) {
                         (function () {
