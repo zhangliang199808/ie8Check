@@ -489,16 +489,71 @@
 
 /* 国门卫士 */
 .national_title_box {
-	display: flex;
-	justify-content: flex-start;
-	height: 2.25rem;
+    height: 36px;
+    margin-top: 20px;
 }
 .national_title_li {
+    display: inline-block;
 	position: relative;
-	width: 8.75rem;
-	height: 2.25rem;
-	color: #000000;
-	font-size: 1rem;
+	width: 140px;
+	height: 36px;
+    color: #FFFFFF;
+    font-weight: 600;
+	font-size: 16px;
 	text-align: center;
-	line-height: 2.25rem;
+    line-height: 36px;
+    background-color: #2478DC;
+}
+
+ /* 底部轮播图 */
+ .swiper-wrapper {
+    margin-top: 20px;
+ }
+ .swiper-container {
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+.arrow-left {
+    position: absolute;
+    top: 40%;
+    left: -60px;
+}
+.arrow-right {
+    position: absolute;
+    top: 40%;
+    right: -60px;
+}
+
+.swiper-box {
+    position: relative;
+    width: 100%;
+}
+.swiper-slide {
+    width: 100%;
+    height: 230px;
+    /* 设置元素两端对齐 */
+    text-align: justify;
+}
+.swiper-slide:after {
+    content: "";
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+}
+.swiper-item {
+    display: inline-block;
+    /* width: 168px; */
+    width: 24%;
+    height: 230px;
+}
+.swiper-item-img {
+    width: 100%;
+    height: 180px;
+}
+.swiper-item-title {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
 }

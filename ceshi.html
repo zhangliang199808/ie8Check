@@ -8,7 +8,7 @@
     <style>
         .swiper-container {
             position: relative;
-            width: 80%;
+            width: 100%;
             height: 230px;
         }
         .arrow-left {
@@ -21,25 +21,128 @@
             top: 30%;
             right: 0;
         }
+
+        .swiper-box {
+            position: relative;
+            width: 100%;
+        }
+        .swiper-slide {
+            width: 100%;
+            height: 230px;
+            /* 设置元素两端对齐 */
+            text-align: justify;
+        }
+        .swiper-slide:after {
+            content: "";
+            display: inline-block;
+            overflow: hidden;
+            width: 100%;
+        }
+        .swiper-item {
+            display: inline-block;
+            /* width: 168px; */
+            width: 20%;
+            height: 230px;
+        }
+        .swiper-item-img {
+            width: 100%;
+            height: 180px;
+        }
+        .swiper-item-title {
+            width: 100%;
+            text-align: center;
+            line-height: 30px;
+            background-color: pink;
+        }
     </style>
 </head>
 <body>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-color: pink;">
-                <div class="swiper-item">
-                    <div>
-                        <img src="./static/img/backgroundLogin.png">
+    <div class="swiper-box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
                     </div>
-                    <div>我是标题</div>
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
+                    <div class="swiper-item">
+                        <div class="swiper-item-img">
+                            <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                        </div>
+                        <div class="swiper-item-title">我是标题</div>
+                    </div>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-color: blue;"></div>
-            <div class="swiper-slide" style="background-color: blueviolet;"></div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 如果需要导航按钮 -->
         </div>
-        <!-- 如果需要分页器 -->
-        <div class="swiper-pagination"></div>
-        <!-- 如果需要导航按钮 -->
         <div class="arrow-left" style="background-color: red;">
             <img src="./static/img/left.png" alt="">
         </div>
@@ -47,6 +150,7 @@
             <img src="./static/img/right.png" alt="">
         </div>
     </div>
+    
     <script src="./js/jquery.min.js"></script>
     <script src="./js/idangerous.swiper.min.js"></script>
     <script>
