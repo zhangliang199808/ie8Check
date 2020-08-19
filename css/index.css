@@ -497,12 +497,24 @@
 	position: relative;
 	width: 140px;
 	height: 36px;
-    color: #FFFFFF;
+    color: #000;
     font-weight: 600;
 	font-size: 16px;
 	text-align: center;
     line-height: 36px;
-    background-color: #2478DC;
+}
+.national_title_li_background {
+	background-color: #358BF1;
+	color: #FFFFFF;
+}
+
+.arrow {
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-top: 10px solid #358BF1;
+    margin: auto;
+    display: none;
 }
 
  /* 底部轮播图 */
@@ -526,6 +538,7 @@
 }
 
 .swiper-box {
+    display: none;
     position: relative;
     width: 100%;
 }

@@ -941,13 +941,107 @@
                 <div class="national_title_box" style="margin-top: 2.5rem;">
                     <div class="national_title_li national_title_li_background">
                         部门先锋
-                        <div class="arrow"></div>
+                        <div class="arrow display_block"></div>
                     </div>
                     <div class="national_title_li">
                         国门榜样
+                        <div class="arrow"></div>
                     </div>
                 </div>
 
+                <div class="swiper-box display_block">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题1</div>
+                                </div>
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                                <div class="swiper-item">
+                                    <div class="swiper-item-img">
+                                        <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
+                                    </div>
+                                    <div class="swiper-item-title">我是标题</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+                        <!-- 如果需要导航按钮 -->
+                    </div>
+                    <div class="arrow-left">
+                        <img style="width: 20px; height: 44px;" src="./static/img/left.png" alt="">
+                    </div>
+                    <div class="arrow-right">
+                        <img style="width: 20px; height: 44px;" src="./static/img/right.png" alt="">
+                    </div>
+                </div>
                 <div class="swiper-box">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
@@ -956,7 +1050,7 @@
                                     <div class="swiper-item-img">
                                         <img style="width: 100%;height: 100%;" src="./static/img/backgroundLogin.png">
                                     </div>
-                                    <div class="swiper-item-title">我是标题</div>
+                                    <div class="swiper-item-title">我是标题1</div>
                                 </div>
                                 <div class="swiper-item">
                                     <div class="swiper-item-img">
@@ -1203,6 +1297,14 @@
                 mySwiper.swipeNext();
         });
 
+        $('.national_title_li').click(function(){            
+            $('.national_title_li').removeClass('national_title_li_background');
+            $('.arrow').removeClass('display_block');
+            $('.swiper-box').removeClass('display_block');
+            $(this).addClass('national_title_li_background');
+            $('.arrow').eq($(this).index()).addClass('display_block');
+            $('.swiper-box').eq($(this).index()).addClass('display_block');
+        })
 
         // // 工作督办等通知栏
         // var noticeBox = document.getElementById('notice')
