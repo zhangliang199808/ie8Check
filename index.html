@@ -1177,16 +1177,10 @@
         });
         // 公安部信息网站
         $('.drop_li').click(function(event) {
-            console.log(1)
             var outIndex = $('.drop_li').index($(this)[0]);
-            console.log(2)
             $('.out_box').removeClass('display_block');
-            console.log(3)
             $('.out_box').eq(outIndex).addClass('display_block');     
-            console.log(4)
-            // event.stopPropagation();
             window.event.cancelBubble = true;
-            console.log(5)
         }) 
         $('body').click(function() {
             $('.out_box').removeClass('display_block');
